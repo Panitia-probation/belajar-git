@@ -13,13 +13,22 @@ clone repositori
 ### Branch development
 
 untuk menambah suatu fitur, jangan sampai memodifikasi di branch `master`. silahkan pindah ke suatu branch fitur, dulu:
- 
 
-untuk buat branch baru
+jika fitur itu belum ada branch-nya di github, silahkan bikin branch baru dengan mengklik _New branch_ di link https://github.com/Panitia-probation/belajar-git/branches
+
+update repositori lokal dengan origin (github)
+
+`git fetch origin`
+
+pindah ke feature-branch dari origin
+
+`git checkout origin/[feature-branch]`
+
+buat branch lokal baru jika belum ada
 
 `git branch [feature-branch]`
 
-untuk pindah ke branch yang sudah ada 
+pindah ke branch yang sudah ada jike belum
 
 `git checkout [feature-branch]`
 
