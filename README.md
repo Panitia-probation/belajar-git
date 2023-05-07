@@ -20,7 +20,7 @@ untuk menambah suatu fitur, jangan sampai memodifikasi di branch `master`. silah
 
 jika fitur itu belum ada branch-nya di github, silahkan bikin branch baru dengan mengklik _New branch_ di link https://github.com/Panitia-probation/belajar-git/branches
 
-update repositori lokal dengan origin (github)
+update repositori lokal dengan yang ada di github 
 
 `git fetch origin`
 
