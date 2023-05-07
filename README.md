@@ -13,13 +13,22 @@ clone repositori
 ### Branch development
 
 untuk menambah suatu fitur, jangan sampai memodifikasi di branch `master`. silahkan pindah ke suatu branch fitur, dulu:
- 
 
-untuk buat branch baru
+jika fitur itu belum ada branch-nya di github, silahkan bikin branch baru dengan mengklik _New branch_ di link https://github.com/Panitia-probation/belajar-git/branches
+
+update repositori lokal dengan origin (github)
+
+`git fetch origin`
+
+pindah ke feature-branch dari origin
+
+`git checkout origin/[feature-branch]`
+
+buat branch lokal baru jika belum ada
 
 `git branch [feature-branch]`
 
-untuk pindah ke branch yang sudah ada 
+pindah ke branch yang sudah ada jike belum
 
 `git checkout [feature-branch]`
 
@@ -35,37 +44,10 @@ pada saat ini, tidak ada test suite maka langsung aja merge ke master branch
 
 pindah kembali ke branch master
 
-`git checkout master`
-
-### Jika sudah siap di-merge
-
-`git merge [feature-branch]`
-
-jika ada konflik,
-
-```
-Auto-merging main.py
-CONFLICT (content): Merge conflict in main.py
-Automatic merge failed; fix conflicts and then commit the result.
-```
-
-silahkan modifikasi repositori, dalam kasus ini file `main.py` sehingga merge conflict 
-solved, kemudian commit lagi (hanya setelah fix conflict) 
-
-`git add -A`
-
-`git commit -m "fixed conflict"`
-
-push upstream repositori lokal ke github
-
-`git push -u origin`
-
-## Jika belum siap di-merge
+## Push upstream feature branch ke origin (github)
 
 `git push -u origin [feature-branch]`
 
-setelah push, silahkan delete branch fitur (pastikan gagasan utama branchnya sudah dicapaikan sebelum merge)
-
-`git branch -d [feature-branch]`
+untuk merge branch, silahkan buka github di browser dan bikin pull request kemudian lakukan merge
 
 > kalo ada kesalahan, tolong bilang di group chat
