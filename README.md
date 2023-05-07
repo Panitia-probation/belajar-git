@@ -10,7 +10,11 @@ clone repositori
 
 `git clone https://github.com/Panitia-probation/belajar-git`
 
+`cd belajar-git/`
+
 ### Branch development
+
+untuk update yang kecil/minor, bisa langsung update branch master
 
 untuk menambah suatu fitur, jangan sampai memodifikasi di branch `master`. silahkan pindah ke suatu branch fitur, dulu:
 
