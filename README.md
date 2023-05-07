@@ -35,37 +35,10 @@ pada saat ini, tidak ada test suite maka langsung aja merge ke master branch
 
 pindah kembali ke branch master
 
-`git checkout master`
-
-### Jika sudah siap di-merge
-
-`git merge [feature-branch]`
-
-jika ada konflik,
-
-```
-Auto-merging main.py
-CONFLICT (content): Merge conflict in main.py
-Automatic merge failed; fix conflicts and then commit the result.
-```
-
-silahkan modifikasi repositori, dalam kasus ini file `main.py` sehingga merge conflict 
-solved, kemudian commit lagi (hanya setelah fix conflict) 
-
-`git add -A`
-
-`git commit -m "fixed conflict"`
-
-push upstream repositori lokal ke github
-
-`git push -u origin`
-
-## Jika belum siap di-merge
+## Push upstream feature branch ke origin (github)
 
 `git push -u origin [feature-branch]`
 
-setelah push, silahkan delete branch fitur (pastikan gagasan utama branchnya sudah dicapaikan sebelum merge)
-
-`git branch -d [feature-branch]`
+untuk merge branch, silahkan buka github di browser dan bikin pull request kemudian lakukan merge
 
 > kalo ada kesalahan, tolong bilang di group chat
