@@ -64,4 +64,8 @@ push upstream repositori lokal ke github
 
 `git push -u origin [feature-branch]`
 
+setelah push, silahkan delete branch fitur (pastikan gagasan utama branchnya sudah dicapaikan sebelum merge)
+
+`git branch -d [feature-branch]`
+
 > kalo ada kesalahan, tolong bilang di group chat
