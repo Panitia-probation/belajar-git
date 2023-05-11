@@ -22,6 +22,8 @@ jika fitur itu belum ada branch-nya di github, silahkan bikin branch baru dengan
 
 update repositori lokal dengan yang ada di github 
 
+`git fetch origin`
+
 `git pull origin`
 
 pindah ke feature-branch dari origin
